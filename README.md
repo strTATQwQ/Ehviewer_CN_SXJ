@@ -8,33 +8,120 @@
 
 An E-Hentai Application for Android.
 
+# 点击前往赏饭：
+
+- [要饭嘛不寒掺](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/feedauthor/support.md)
+
+唯一X账号：https://x.com/Sherloc21784244    
+Telegram群: https://telegram.me/+WyclP8pPlk-JfbwS   
+Telegram通知群: https://telegram.me/Ehviewer_xiaojieonly_channel
+
 # Download
 
 点击前往下载：
 
 [//]: # (- [Appteka]&#40;https://appteka.store/app/acdr168648&#41;)
+- [百度云](https://pan.baidu.com/s/1Vp7H8NhuUix33BZCpfX_pA) 提取码：26d1
+- [夸克网盘](https://pan.quark.cn/s/a2a1bdc3a742) 提取码：S31f
+- [蓝奏云](https://wwbfg.lanzoum.com/i4AyK4eewfmh)，电脑端可正常下载 提取码：f3bu
+- [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+- Torrent链接:magnet:?xt=urn:btih:9952183b0cfe6436777c0e98647b3b679918d3fa&xt=urn:btmh:12204c2d4243e981d7677c80bb16bcc1192051fe5b85569905974fd152a54682ecf6&dn=EhViewer-2.0.2.7.apk&xl=28245951
+
+
+# Changelog
+
+## 2026/11/02
+### 新版发布2.0.2.7
+- 添加本地导入筛选功能
+- 修复导入本地画廊信息时可能崩溃的问题
+- 新增从 CBOR 格式读取本地画廊的功能
+- 汞齐 ：avoid leaking the buffer global ref in create stream helpers (#2878)
+
+## 2026/10/21
+### 新版发布2.0.2.6 
+- 表站图床host过期，紧急修复
+- [百度云](https://pan.baidu.com/s/1Wh2RFStPi3kXZfcukrzMFA) 提取码：7ygg
+- [夸克网盘](https://pan.quark.cn/s/208df8b1b622) 提取码：wjVU
+- [蓝奏云](https://wwbfg.lanzoum.com/ip60n4cuuj0b)，电脑端可正常下载 提取码：a8rq
+- [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+- Torrent链接:magnet:?xt=urn:btih:998657a2387c0b12ff251fb74b586e0c3f3fdeba&xt=urn:btmh:122070097613c643682396a645c26a601777e7b127e999621aa417f224113e8363a8&dn=EhViewer-2.0.2.6.apk&xl=28229547
+
+
+
+## 2026/10/01
+### 新版发布2.0.2.5 国庆节快乐~
+
+- 为 Gallery_Tags 增加 LOCATION 标签分类，并同步更新相关数据库处理
+- 改进 SpiderInfo 解析并增强 RestoreDownloadPreference 功能
+- 添加阅读刷新率设置功能
+- 重构下载页，新增下载归档导入、批量操作、选择监听器、搜索控制器及分页控制器
+- 修复阅读进度重置功能 by: Mios-dream
+- 添加本地相册导入功能
+- 修复归档解压因文件名超长导致的导入失败
+- [百度云](https://pan.baidu.com/s/1COJPa_ZtIWFtvEvuYmZd7A) 提取码：e13i
+- [夸克网盘](https://pan.quark.cn/s/1e9696cf63ae) 提取码：dY97
+- [蓝奏云](https://wwbfg.lanzouu.com/iNrjO4afcy0b)，电脑端可正常下载 提取码：fobb
+- [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+- Torrent链接:magnet:?xt=urn:btih:9566ada427877a16f0a95e26c54223c10e131fa3&xt=urn:btmh:1220b9a286b9fd236df79d91f6fdc1c77682890e2f6b368ae66d58740cb2cdad433a&dn=EhViewer-2.0.2.5.apk&xl=28229476
+
+
+## 2026/09/01 
+### 新版发布2.0.2.4 
+
+- 更新Gradle插件和Gradle包装器版本
+- 增强异常处理，捕获 NoSuchElementException 以避免潜在的错误
+- 添加读取画廊信息头的功能，优化内存处理并增强异常捕获
+- 添加封面图像对话框功能，优化下载服务通知和动画效果
+- 重构SelectItemWithIconAdapter为Kotlin并删除旧Java实现
+- 更新归档下载功能，重构下载管理器为Kotlin，添加新服务和进度通知，添加暂停继续下载功能
+- 在更新对话框中增加支持链接与赞助按钮
+- 猫尾草: 抽离下载信息监听器接口
+- [百度云](https://pan.baidu.com/s/1pJl_NzCt46YlLv494kUuKw) 提取码：9mej
+- [夸克网盘](https://pan.quark.cn/s/873901763b79) 提取码：ULkh
+- [蓝奏云](https://wwbfg.lanzouu.com/iqgrh3zxrdah)，电脑端可正常下载 提取码：73tu
+- [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+- Torrent链接:magnet:?xt=urn:btih:7289464887abcd77f106c84f7ab395e5d6e74465&xt=urn:btmh:122013a4f6850078100eab8e49819aa9a34f29c1f88856089413cf2bf236453d4302&dn=EhViewer-2.0.2.3.apk&xl=27747455
+
+
+## 2026/09/01
+### 新版发布2.0.2.4
+
+- 更新Gradle插件和Gradle包装器版本
+- 增强异常处理，捕获 NoSuchElementException 以避免潜在的错误
+- 添加读取画廊信息头的功能，优化内存处理并增强异常捕获
+- 添加封面图像对话框功能，优化下载服务通知和动画效果
+- 重构SelectItemWithIconAdapter为Kotlin并删除旧Java实现
+- 更新归档下载功能，重构下载管理器为Kotlin，添加新服务和进度通知，添加暂停继续下载功能
+- 在更新对话框中增加支持链接与赞助按钮
+- 猫尾草: 抽离下载信息监听器接口
+
+
+## 2026/08/01
+### 新版发布2.0.2.3 建军节快乐~
+
+- 修复页码显示延迟的问题
+- 添加重置阅读进度功能以更新UI
+- 更新 AboutFragment 以使用 setPreferencesFromResource，确保仅在满足条件时设置偏好项点击监听器
+- 修复drawable赋值逻辑以避免潜在的空指针异常
+- 增强图像解码错误处理，避免空值返回并记录警告
+- 添加获取可编辑评论的功能，更新相关解析器和UI逻辑
+- [百度云](https://pan.baidu.com/s/1pJl_NzCt46YlLv494kUuKw) 提取码：9mej
+- [夸克网盘](https://pan.quark.cn/s/873901763b79) 提取码：ULkh
+- [蓝奏云](https://wwbfg.lanzouu.com/iqgrh3zxrdah)，电脑端可正常下载 提取码：73tu
+- [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
+- Torrent链接:magnet:?xt=urn:btih:7289464887abcd77f106c84f7ab395e5d6e74465&xt=urn:btmh:122013a4f6850078100eab8e49819aa9a34f29c1f88856089413cf2bf236453d4302&dn=EhViewer-2.0.2.3.apk&xl=27747455
+
+
+## 2026/08/01
+### 新版发布2.0.2.2
+
+- 修复了浏览历史未正确保存的问题
+- 修复评论时输入框被键盘遮挡的问题
 - [百度云](https://pan.baidu.com/s/1rh-lvEc-QjiMtfPi6T1BKA) 提取码：7p6z
 - [夸克网盘](https://pan.quark.cn/s/0de32f69e12a) 提取码：SnVD
 - [蓝奏云](https://wwbfg.lanzouu.com/iWAFL3uefh8d)，电脑端可正常下载 提取码：3txx
 - [GitHub](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/releases)
 - Torrent链接:magnet:?xt=urn:btih:ec1403341edaba853b0836d2d3c5976498572a3c&xt=urn:btmh:1220453fdf4272b27c81d88a4ddae25a64ca524a13e53f835430b4acacb2e7ae3bcb&dn=EhViewer-2.0.2.2.apk&xl=27747451
-
-
-点击前往赏饭：
-
-- [要饭嘛不寒掺](https://github.com/xiaojieonly/Ehviewer_CN_SXJ/blob/BiLi_PC_Gamer/feedauthor/support.md)
-
-唯一X账号：https://x.com/Sherloc21784244    
-Telegram群: https://t.me/+WyclP8pPlk-JfbwS    
-Telegram通知群: https://t.me/Ehviewer_xiaojieonly_channel
-
-
-# Changelog
-## 2026/07/01
-### 新版发布2.0.2.2
-
-- 修复了浏览历史未正确保存的问题
-- 修复评论时输入框被键盘遮挡的问题
 
 
 ## 2026/07/01 
@@ -193,7 +280,7 @@ Telegram通知群: https://t.me/Ehviewer_xiaojieonly_channel
 
 
 
-- [2024年更新日志-人生的不起落落落落](feedauthor/year2025-life-broken-down.md)  
+- [2025年更新日志-人生的不起落落落落](feedauthor/year2025-life-broken-down.md)  
 - [2024年更新日志-感谢大家的支持](feedauthor/year2024-thanks.md)  
 - [2023年更新日志-时间过的好快](feedauthor/year2023-boom.md)  
 - [2022年更新日志-成长](feedauthor/year2022-growing-up.md)  

@@ -1,0 +1,68 @@
+Integrated build 2.0.2.7-nas.20261114
+===================================
+
+Base and scope
+--------------
+Merged upstream BiLi_PC_Gamer at 49dec24 into codex/complete-working.
+Retains the fork's NAS system, download-thumbnail fixes and compact pager.
+No new upstream pull request is created by this integration.
+
+Compatibility work
+------------------
+- Adopt upstream's Kotlin download adapter and extracted scene controllers,
+  including archive services, local-album imports and reading-progress handling.
+- Reapply NAS catalog merging, storage indicators, lazy reading, sync actions,
+  batch operations and deletion scope to the new download components.
+- Bind the compact pager to the current scene adapter/recycler after view
+  recreation. Keep drawer locking and quick-panel cleanup on view destruction.
+- Keep the existing debug application ID so existing fork installations can be
+  updated in place; append a distinct NAS integration version suffix.
+- Preserve atomic thumbnail cache writes and stale-callback protection for
+  asynchronously loaded archive covers; use LoadImageView's load lifecycle.
+- Clear recycled reading-progress text when no reading metadata is available.
+- Align the 500-item pagination boundary in the adapter and controller so the
+  hidden pager cannot leave rows inaccessible; validate resolved row offsets.
+
+Verification
+------------
+Environment: Windows, Temurin JDK 21, Gradle 9.5, Android Gradle Plugin 9.3.1.
+
+assembleAppReleaseDebug: PASS (four ABI variants).
+Full testAppReleaseDebugUnitTest: 62 tests reported, 54 passed; 8 failed during
+Robolectric runner initialization because target SDK 30 exceeds the bundled
+Robolectric 4.2.1 maximum supported SDK 28. These tests did not execute their
+assertions. This is not a claim that the complete test suite passes.
+
+Focused regression rerun: 26 passed, 0 failures:
+- NAS database conflict/path policies: 4
+- NAS configuration: 2
+- Incremental sync policy: 3
+- Download pagination: 5 (threshold, offsets, final page, disabled paging,
+  current host list after view recreation)
+- SpiderInfo/CBOR compatibility: 7
+- Archive extraction: 2
+- ComicInfo parsing: 3
+
+Physical Android smoke checks:
+- In-place APK update and cold launch succeeded.
+- Restored an official schema-v8 export; SQLite integrity check passed.
+- Download IDs, local favorites and download-directory mappings preserved.
+- Download thumbnails visible; arrow pagination works after detail/back.
+- Single-click quick pager opens and its close control dismisses it.
+- Tapping a row enters GalleryActivity and returning keeps the current page.
+- No new crash-buffer entries observed during the smoke checks.
+- Shared-directory count and sampled image/metadata hashes unchanged after
+  replacing the original app. This was not a full hash of every image.
+
+Limitations and migration notes
+------------------------------
+- This integration did not run destructive live-NAS or multi-device sync tests.
+- Cloud favorites remain on the service and require the same account; login
+  cookies are not part of the official exported database.
+- Opening details/reading can refresh metadata and update reading history;
+  built-in quick-search name translation may also update displayed names.
+- Keep an export and original APK before replacing a differently signed app.
+  The device migration used uninstall-with-data-retention for rollback and did
+  not delete the shared download directory.
+- Device exports, screenshots, credentials, addresses and audit scripts are not
+  included in this repository or the commit.
